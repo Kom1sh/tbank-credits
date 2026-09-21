@@ -1,0 +1,4 @@
+.DS_Store
+deck-qa/
+__pycache__/
+*.pyc
