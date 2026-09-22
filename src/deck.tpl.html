@@ -229,10 +229,10 @@ b,strong{font-weight:600}
 .rule .n{font:400 21px/1.35 var(--ft);color:var(--charcoal)}
 
 /* шкала ставок с порогом */
-.scale{display:flex;flex-direction:column;gap:9px;min-width:0}
+.scale{display:flex;flex-direction:column;gap:7px;min-width:0}
 .srow{display:grid;grid-template-columns:270px minmax(0,1fr) 128px;gap:16px;align-items:center}
 .srow .nm{font:500 20px/1.25 var(--ft);color:var(--ink);text-align:right}
-.srow .nm small{display:block;font:400 16px/1.2 var(--ft);color:var(--slate);margin-top:2px}
+.srow .nm small{display:block;font:400 15px/1.2 var(--ft);color:var(--slate);margin-top:2px;white-space:nowrap}
 .srow .track{height:30px;background:var(--surface);border-radius:8px;position:relative;overflow:hidden}
 .srow .fillbar{position:absolute;left:0;top:0;bottom:0;border-radius:8px}
 .srow .val{font:600 22px/1 var(--fd);text-align:left;font-variant-numeric:tabular-nums}
@@ -245,6 +245,16 @@ b,strong{font-weight:600}
 .scale .axis .marks span{position:absolute;transform:translateX(-50%);font:500 15px/1 var(--fm);color:var(--steel)}
 
 /* цитата из отзыва */
+.srow{grid-template-columns:362px minmax(0,1fr) 122px 170px}
+.scale .axis{grid-template-columns:362px minmax(0,1fr) 122px 170px}
+.srow .vd{font:500 18px/1.25 var(--ft)}
+.srow.u .track{border:1px dashed var(--hair2);background:transparent}
+.mline{display:flex;justify-content:space-between;align-items:baseline;gap:14px;border-bottom:1px solid rgba(13,37,61,.10);padding-bottom:7px}
+.mline span{font:400 19px/1.3 var(--ft);color:var(--charcoal);min-width:0}
+.mline b{font:600 21px/1.2 var(--fd);color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums}
+.mline.big b{font-size:26px}
+.verdict{margin-top:auto;font:600 21px/1.3 var(--fd);padding-top:8px}
+.verdict.good{color:var(--good)} .verdict.bad{color:var(--bad)}
 .quote{background:var(--surface);border-left:3px solid var(--hair2);border-radius:0 14px 14px 0;padding:16px 20px;display:flex;flex-direction:column;gap:9px;min-width:0}
 .quote.bad{border-left-color:var(--bad)} .quote.good{border-left-color:var(--good)}
 .quote p{font:400 20px/1.38 var(--ft);color:var(--ink)}
